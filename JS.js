@@ -247,3 +247,22 @@ form.addEventListener('submit',function(e){
     
 }
 );    
+
+// Get the form element and button element
+const form1 = document.querySelector('.contact-box');
+const button = form.querySelector('.btn1');
+
+// Add event listener to the button
+button.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent form submission
+    const name = form.querySelector('input[type="text"][placeholder="Your Name"]').value;
+    const email = form.querySelector('input[type="text"][placeholder="Your Email"]').value;
+    const phone = form.querySelector('input[type="text"][placeholder="Phone"]').value;
+    const message = form.querySelector('textarea').value;
+    // You can now use these variables to send the form data to your server or do any other operations.
+    function isValidEmail(email)
+{
+    const re= /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+});
