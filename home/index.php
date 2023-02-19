@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libraria101</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- linku per font font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- linku i css  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header fillon -->
+    <header class="header">
+        <div class="header-1">
+            <!-- Keto 3 perdoren per icon style :fas perdoret per solid, fal per light, fab per brand -->
+            <a href="#" class="logo"><i class = "fas fa-book"></i>Libraria101</a>
+           
+            <form action = "" class = "search-form">
+                <input type = "search" name ="" placeholder = "Kërko këtu..." id="search-box">
+                <label for ="search-box" class ="fas fa-search"></label>
+            </form>
+
+            <div class = "icons">
+                <div id = "search-btn" class="fas fa-search"></div>
+                <!--<a href ="#" class = "fas fa-heart"></a>-->
+                <!--<a href ="#" class = "fas fa-shopping-cart"></a>-->
+                <div id = "login-btn" class ="fas fa-user"></div>
+                <div id = "signup-btn" class ="far fa-user-circle"></div>
+                
+            </div>
+
+        </div> 
+
+        <div class="header-2">
+            <nav class = "navbar">
+                <a href = "../home/homeindex.html">Faqja Kryesore</a>
+                <a href = "../shop/shop.php">Librat</a>
+                <a href = "../contactus/contactus.php">Na kontaktoni</a>
+                <a href = "../blogs/blogs.php">Blogjet</a>
+            </nav>
+        </div>
+    </header>
+    <!-- header mbaron -->
+
+    <!-- navbari i poshtem fillon -->
+
+    <nav class = "bottom-navbar">
+        <a href = "#home" class="fas fa-home"></a>
+        <a href = "#featured" class = "fas fa-list"></a>
+        <a href = "#arrivals" class = "fas fa-tags"></a>
+        <a href = "#reviews" class = "fas fa-comments"></a>
+        <a href = "#blogs" class = "fas fa-blog" ></a>
+    </nav>
+
+    <!-- login form -->
+
+    <div class ="login-form-container">
+        <div id="close-login-btn" class="fas fa-times"></div>
+
+        <form action="" >
+            <h3>Kyçu</h3>
+            <span>Email-i përdoruesit</span>
+            <input type="email" name="" class="box" placeholder="Shkruaj email-in tuaj" id="">
+            <span>Fjalëkalimi</span>
+            <input type="password" name="" class="box"placeholder="Shkruaj fjalëkalimin tuaj" id="">
+            <div class="checkbox">
+               <input type="checkbox" name="" id="remember-me">
+               <lable for="remember-me">Më mbaj mend</lable>
+            </div>
+                <input type="submit" value="Hyni" class="btn">
+                <!-- <p>Keni harruar fjalëkalimin?<a href ="#">Kliko këtu...</a></p>
+                <p>Nuk keni një llogari?<a href ="#">Krijo një</a></p> -->
+        </form>
+    </div>
+     <!-- login form perfundon -->
+     <!-- signup form fillon-->
+     <div class="signup-form-container">
+        <div id="close-signup-btn" class="fas fa-times"></div>
+        <form action="" >
+            <h3>Regjistrohu</h3>
+            <span>Emri përdoruesit</span>
+            <input type="text" name="" class="box"placeholder="Shëno emrin tuaj..." id="">
+                <span>Email-i</span>
+                <input type="email" name="" class="box" placeholder="Shëno email-in..." id="">
+                <span>Fjalëkalimi</span>
+                <input type="password" name="" class="box"placeholder="Shëno fjalëkalimin..." id="">
+                <span>Konfirmimi i fjalëkalimit</span>
+                <input type="password" name="" class="box" placeholder="Shëno fjalëkalimin përseri..." id="">
+                <input type="checkbox" id="terms" name="terms"><lable for="terms">I agree to the terms and conditions</lable><br>
+                <input type="submit" value="Hyni" class="btn">
+              <p></p>
+              <!-- <a href="#" >Keni një llogari tashmë, Kyçuni !!!</a> -->
+        </form>
+     </div>
+       <!-- signup form perfundon-->
+     
+
+<!-- sektori i faqes kryesore -->
+
+    <selection class ="home" id ="home">
+        <div class ="row">
+        <div class ="content">
+            <h3>Deri në 75% zbritje</h3>
+            <p>Sometimes in life, we need a few bad days in order to keep the good ones in perspective.
+            <b> •Colleen Hoover• </b></p>
+            <a href ="#" class ="btn">Bli Tani</a>
+
+        </div>
+        <div class="swiper books-slider">
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide"><img src="image/book-1.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book-2.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book-3.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book-4.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book-5.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book-6.png" alt=""></a>
+            </div>
+            <img src="image/stand.png" class="stand" alt="">
+        </div>
+        </div>
+    
+    </selection>
+<!-- sektori i faqeskryesore mbaron -->
+<!-- sektori i ikonave fillon -->
+<section class="icons-container">
+
+    <div class="icons">
+        <i class="fas fa-shipping-fast"></i>
+        <div class="content">
+            <h3>Transport pa pagesë</h3>
+            <p>Mbi shumën 50€</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-lock"></i>
+        <div class="content">
+            <h3>Pagesë e Siguruar</h3>
+            <p>Mbi 100 Pagesa Të Sigurta</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-redo-alt"></i>
+        <div class="content">
+            <h3>Kthimi I Thjeshtë</h3>
+            <p>10 ditë afatë kthimi</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-headset"></i>
+        <div class="content">
+            <h3>24/7 Mbështetje</h3>
+            <p>Na kontaktoni në çdo moment!</p>
+        </div>
+    </div>
+
+</section>
+<!-- sektori i ikonave perfundon ketuu -->
+<section class="featured" id="featured">
+
+    <h1 class="heading"> <span>Librat e paraqitur</span> </h1>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <a href="#" class="btn">Shtoni në karrocë</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <a href="#" class="btn">Shtoni në karrocë</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <a href="#" class="btn">Shtoni në karrocë</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-4.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <a href="#" class="btn">Shtoni në karrocë</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-5.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <a href="#" class="btn">Shtoni në karrocë</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-6.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <a href="#" class="btn">Shtoni në karrocë</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-7.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <a href="#" class="btn">Shtoni në karrocë</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-8.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <a href="#" class="btn">Shtoni në karrocë</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-9.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <a href="#" class="btn">Shtoni në karrocë</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/book-10.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <a href="#" class="btn">Shtoni në karrocë</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+<!-- sektori i librave te paraqitur perfundon ketu -->
+<!-- sektori i lajmeve fillon ketu -->
+<section class="newsletter">
+
+    <form action="">
+        <h3>Abonohuni për përditësimet më të fundit</h3>
+        <input type="email" name="" placeholder="Shkruaj email-in tuaj..." id="" class="box">
+        <input type="submit" value="abonohu" class="btn">
+    </form>
+
+</section>
+
+<!-- sektori i lajmeve mbaron ketu -->
+<!-- sektori i librave te fundti fillon ketu -->
+<section class="arrivals" id="arrivals">
+
+    <h1 class="heading"> <span>Ardhjet e reja</span> </h1>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>E Re</h3>
+                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>E Re</h3>
+                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>E Re</h3>
+                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-4.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>E Re</h3>
+                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-5.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>E Re</h3>
+                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-6.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>E Re</h3>
+                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-7.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>E Re</h3>
+                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-8.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>E Re</h3>
+                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-9.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>E Re</h3>
+                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/book-10.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>E Re</h3>
+                    <div class="price">15.99€ <span>20.99€</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- sektori i ardhjeve te reja perfundon ketu -->
+<!-- sektori i marrveshjeve fillon ketu -->
+<section class="deal">
+
+    <div class="content">
+        <h3>Oferta e ditës</h3>
+        <h1>deri në 50% zbritje</h1>
+        <p>Vetë kompania është një kompani shumë e suksesshme. Prandaj ai kërkon njohuri për kohët e dhimbjes, por i linduri nga dhimbja dëshiron të shpëtojë.</p>
+        <a href="#" class="btn">Bli tani</a>
+    </div>
+
+    <div class="image">
+        <img src="image/deal-img.jpg" alt="">
+    </div>
+
+</section>
+
+<!-- sektori i marrveshjeve mbaron ketu -->
+<!-- sektori i komenteve fillon ketu -->
+<section class="reviews" id="reviews">
+
+    <h1 class="heading"> <span>Komentet e klientëve</span> </h1>
+
+    <div class="swiper reviews-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/pic-1.png" alt="">
+                <h3>john deo</h3>
+                <p> Unë po habitem me këta libra të mrekullueshëm </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-2.png" alt="">
+                <h3>sena paul</h3>
+                <p>E mrekullueshme :)</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-3.png" alt="">
+                <h3>mark berk</h3>
+                <p>Sa më shpesh që hyjë aq më shumë më pëlqejnë. </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="image/pic-4.png" alt="">
+                <h3>lore div</h3>
+                <p>Janë libra fantastik ia u sugjerojë të gjithve.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-5.png" alt="">
+                <h3>jim khan</h3>
+                <p>E kënaqur me punën tuaj, Jeni më të mirët☻</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-6.png" alt="">
+                <h3>elsa bob</h3>
+                <p>Shkelqyeshëm</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</section>
+
+<!-- sektori i komenteve mbaron ketu -->
+
+<!-- sektori i footerit fillon ketu  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Lokacioni ynë</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Lipjan </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Prishtinë </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Prizeren </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Pejë </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Ferizaj </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Gjilan </a>
+        </div>
+
+        <div class="box">
+            <h3>Lidhjet e shpejta</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Faqja Kryesore </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Librat e paraqitur </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Ardhjet </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Komentet </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Blogjet </a>
+        </div>
+
+        <div class="box">
+            <h3>Lidhje shtesë</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> informacioni i llogarisë</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> artikujt e porositur </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Politika e privatësisë </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Metoda e pagesës </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> shërbimet tona </a>
+        </div>
+
+        <div class="box">
+            <h3>informacion kontakti</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +383 45 252 128 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +383 45 469 188 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> anesazhegrova6@gmail.com </a>
+            <a href="#"> <i class="fas fa-envelope"></i> blendabiqkaj3@gmail.com </a>
+            <!--<img src="image/kosovomapp.png" class="map" alt="">-->
+        </div>
+        
+    </div>
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="credit"> krijuar nga <span>Anesa Zhegrova & Blendiona Biqkaj</span> | të gjitha të drejtat e rezervuara! </div>
+
+</section>
+
+<!-- sektori i footerit mbaron ketu -->
+<!-- sektori i loaderit filllon ketu -->
+
+<!--<div class="loader-container">
+    <img src="image/loader-img.gif" alt="">
+</div> -->
+
+
+<!-- sektori i loaderit perfundon ketu -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<!-- linku i js-->
+    <script src="JS.js"></script>
+</body>
+</html>
