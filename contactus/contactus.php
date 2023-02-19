@@ -28,7 +28,7 @@ include_once '../header/header.php';
 <?php
 include_once '../footer/footer.php';
 ?>
-<!--contact us mbaron ketu-->
+<!--contactus mbaron ketu-->
 
 
 <!-- footer fillon ketu
