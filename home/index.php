@@ -1,21 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Libraria101</title>
+<title>Libraria101</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <!-- linku per font font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- linku i css  -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- header fillon -->
+   
     <header class="header">
         <div class="header-1">
-            <!-- Keto 3 perdoren per icon style :fas perdoret per solid, fal per light, fab per brand -->
             <a href="#" class="logo"><i class = "fas fa-book"></i>Libraria101</a>
            
             <form action = "" class = "search-form">
@@ -25,10 +16,6 @@
 
             <div class = "icons">
                 <div id = "search-btn" class="fas fa-search"></div>
-                <!--<a href ="#" class = "fas fa-heart"></a>-->
-                <!--<a href ="#" class = "fas fa-shopping-cart"></a>-->
-                <div id = "login-btn" class ="fas fa-user"></div>
-                <div id = "signup-btn" class ="far fa-user-circle"></div>
                 
             </div>
 
@@ -36,10 +23,13 @@
 
         <div class="header-2">
             <nav class = "navbar">
-                <a href = "../home/homeindex.html">Faqja Kryesore</a>
+                <a href = "../home/index.php">Faqja Kryesore</a>
                 <a href = "../shop/shop.php">Librat</a>
-                <a href = "../contactus/contactus.php">Na kontaktoni</a>
+                <a href = "../contactus/contactus.php">Kontakti</a>
                 <a href = "../blogs/blogs.php">Blogjet</a>
+                <a href = "../signUp/signup.php">Regjistrohu</a>
+                <a href = "../logIn/login.php">Kyçuni</a>
+                
             </nav>
         </div>
     </header>
@@ -55,47 +45,7 @@
         <a href = "#blogs" class = "fas fa-blog" ></a>
     </nav>
 
-    <!-- login form -->
-
-    <div class ="login-form-container">
-        <div id="close-login-btn" class="fas fa-times"></div>
-
-        <form action="" >
-            <h3>Kyçu</h3>
-            <span>Email-i përdoruesit</span>
-            <input type="email" name="" class="box" placeholder="Shkruaj email-in tuaj" id="">
-            <span>Fjalëkalimi</span>
-            <input type="password" name="" class="box"placeholder="Shkruaj fjalëkalimin tuaj" id="">
-            <div class="checkbox">
-               <input type="checkbox" name="" id="remember-me">
-               <lable for="remember-me">Më mbaj mend</lable>
-            </div>
-                <input type="submit" value="Hyni" class="btn">
-                <!-- <p>Keni harruar fjalëkalimin?<a href ="#">Kliko këtu...</a></p>
-                <p>Nuk keni një llogari?<a href ="#">Krijo një</a></p> -->
-        </form>
-    </div>
-     <!-- login form perfundon -->
-     <!-- signup form fillon-->
-     <div class="signup-form-container">
-        <div id="close-signup-btn" class="fas fa-times"></div>
-        <form action="" >
-            <h3>Regjistrohu</h3>
-            <span>Emri përdoruesit</span>
-            <input type="text" name="" class="box"placeholder="Shëno emrin tuaj..." id="">
-                <span>Email-i</span>
-                <input type="email" name="" class="box" placeholder="Shëno email-in..." id="">
-                <span>Fjalëkalimi</span>
-                <input type="password" name="" class="box"placeholder="Shëno fjalëkalimin..." id="">
-                <span>Konfirmimi i fjalëkalimit</span>
-                <input type="password" name="" class="box" placeholder="Shëno fjalëkalimin përseri..." id="">
-                <input type="checkbox" id="terms" name="terms"><lable for="terms">I agree to the terms and conditions</lable><br>
-                <input type="submit" value="Hyni" class="btn">
-              <p></p>
-              <!-- <a href="#" >Keni një llogari tashmë, Kyçuni !!!</a> -->
-        </form>
-     </div>
-       <!-- signup form perfundon-->
+ 
      
 
 <!-- sektori i faqes kryesore -->
