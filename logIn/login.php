@@ -1,3 +1,4 @@
+<title>Kyçuni</title>
 <?php
 require_once 'userController.php';
 
