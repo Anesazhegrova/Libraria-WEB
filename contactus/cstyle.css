@@ -21,8 +21,6 @@
    
 }
 
-
-/* rem eshte vlere e gjatesise */
 html{
     font-size:62.5%;
     overflow-x:hidden;
@@ -30,21 +28,14 @@ html{
     scroll-behavior: smooth;
 }
 
-
-/* i gjith shiriti levizes */
 html::-webkit-scrollbar{
     width:1rem;
 }
 
-
-/* shiriti i progresit (gjurma) */
 html::-webkit-scrollbar-track{
     background: transparent;
 }
 
-
-/* doreza levizese e zvarritshme */
-/* var(funksion per te futur vleren e variables me  vone e fleten e stilit) */
 html::-webkit-scrollbar-thumb{
     background: var(--black);
 }
@@ -219,6 +210,7 @@ section{
 
 /*HEADER PERFUNDON*/
 .container{
+    background-image:url(img1.jpg);
     position: relative;
     width: 100%;
     height: 100%;
@@ -359,7 +351,7 @@ textarea{
 }
 
 .footer .box-container .box .map{
-    width:100%;
+    width:50%;
 }
 
 .footer .share{
@@ -395,3 +387,55 @@ textarea{
 .footer .credit span{
     color:var(--blue);
 }
+@media screen and (max-width: 768px) {
+    .footer .box-container{
+    display: block;
+    margin-bottom: 2rem;
+    }
+    
+    .footer .box-container .box{
+    margin-bottom: 1.5rem;
+    }
+    
+    .footer .box-container .box h3{
+    font-size: 1.8rem;
+    padding:1rem 0;
+    }
+    
+    .footer .box-container .box a{
+    font-size: 1.2rem;
+    padding:1rem 0;
+    }
+    
+    .footer .box-container .box a i{
+    padding-right: .3rem;
+    }
+    
+    .footer .box-container .box a:hover i{
+    padding-right: .5rem;
+    }
+    
+    .footer .box-container .box .map{
+    width:100%;
+    height: 200px;
+    }
+    
+    .footer .share{
+    padding:1rem 0;
+    text-align: center;
+    }
+    
+    .footer .share a{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 1.6rem;
+    }
+    
+    .footer .credit{
+    margin-top: 2rem;
+    padding-top: 2rem;
+    font-size: 1.6rem;
+    }
+    }
+
