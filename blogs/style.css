@@ -21,8 +21,6 @@
    
 }
 
-
-/* rem eshte vlere e gjatesise */
 html{
     font-size:62.5%;
     overflow-x:hidden;
@@ -30,21 +28,14 @@ html{
     scroll-behavior: smooth;
 }
 
-
-/* i gjith shiriti levizes */
 html::-webkit-scrollbar{
     width:1rem;
 }
 
-
-/* shiriti i progresit (gjurma) */
 html::-webkit-scrollbar-track{
     background: transparent;
 }
 
-
-/* doreza levizese e zvarritshme */
-/* var(funksion per te futur vleren e variables me  vone e fleten e stilit) */
 html::-webkit-scrollbar-thumb{
     background: var(--black);
 }
@@ -303,7 +294,8 @@ section{
 
 body{
     line-height: 1.4;
-    color: var(--dark);
+    color: var(--dark); 
+    
 }
 img{
     width: 100%;
@@ -313,6 +305,7 @@ img{
     max-width: 1320px;
     margin: 0 auto;
     padding: 0 1.2rem;
+  
 }
 
 
@@ -320,6 +313,7 @@ img{
 /* design */
 .design{
     padding: 4.5rem 0;
+    background-image:url(img1.jpg);
 }
 .title{
     text-align: center;
@@ -333,7 +327,11 @@ img{
     text-transform: uppercase;
     padding: 0.6rem 0;
 }
+.cc{
+    background-image:url(img1.jpg);
+}
 .design-content{
+   
     margin: 2rem 0;
 }
 .design-item{
