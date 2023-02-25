@@ -1,3 +1,5 @@
+<title>Footeri</title>
+
 <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="fstyle.css">
@@ -40,7 +42,7 @@
             <a href="#"> <i class="fas fa-phone"></i> +383 45 469 188 </a>
             <a href="#"> <i class="fas fa-envelope"></i> anesazhegrova6@gmail.com </a>
             <a href="#"> <i class="fas fa-envelope"></i> blendabiqkaj3@gmail.com </a>
-            <img src="kosovomapp.png" class="map" alt="">
+           
         </div>
         
     </div>
