@@ -2,7 +2,7 @@ searchForm = document.querySelector('.search-form');
 document.querySelector('#search-btn').onclick = ()=>{
     searchForm.classList.toggle('active');
 }
-
+/*
 let loginForm = document.querySelector('.login-form-container');
 document.querySelector('#login-btn').onclick =() =>{
     loginForm.classList.toggle('active');
@@ -18,7 +18,7 @@ document.querySelector('#signup-btn').onclick =() =>{
 }
 document.querySelector('#close-signup-btn').onclick =() =>{
   signupForm.classList.remove('active');
-}
+}*/
 
 // function showSignupForm() {
 //   // Hide login form
@@ -187,7 +187,7 @@ function showSuccess(input){
 
 //Email
 
-function isValidEmail(email)
+/*function isValidEmail(email)
 {
     const re= /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
@@ -246,7 +246,7 @@ form.addEventListener('submit',function(e){
      
     
 }
-);
+);*/
 
 // Get the form element and button element
 const form1 = document.querySelector('.contact-box');
